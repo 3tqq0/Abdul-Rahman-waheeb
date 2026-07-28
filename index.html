@@ -11,7 +11,9 @@
             <b><a href="#strings">النصوص (Strings)</a></b> | 
             <b><a href="#numbers">الأعداد (Numbers)</a></b> | 
             <b><a href="#booleans">القيم المنطقية</a></b> | 
-            <b><a href="#tips">نصائح برمجية</a></b>
+            <b><a href="#tips">نصائح برمجية</a></b> |
+            <b><a href="#media">وسائط توضيحية</a></b> |
+            <b><a href="#contact">تواصل معنا</a></b>
         </nav>
     </div>
 
@@ -116,6 +118,64 @@
         </table>
     </div>
 
+    <hr>
+
+    <!-- قسم الوسائط المضمنة باستخدام iFrame -->
+    <div id="media">
+        <h2>مصادر ووسائط إضافية (iFrames)</h2>
+
+        <!-- 1. تضمين فيديو يوتيوب -->
+        <h3>فيديو توضيحي:</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="فيديو شرح البرمجة" frameborder="0" allowfullscreen></iframe>
+
+        <br><br>
+
+        <!-- 2. تضمين ملف PDF محلي -->
+        <h3>ملف الشرح (PDF):</h3>
+        <iframe src="lesson.pdf" width="100%" height="500px">
+            <p>متصفحك لا يدعم عرض ملفات PDF، يمكنك تحميله مباشرة.</p>
+        </iframe>
+
+        <br><br>
+
+        <!-- 3. تضمين خريطة من خرائط جوجل -->
+        <h3>موقعنا على الخريطة:</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3848.123456789!2d44.0!3d13.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDMwJzAwLjAiTiA0NMKwMDAnMDAuMCJF!5e0!3m2!1sar!2s!4v1234567890" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <br><br>
+
+        <!-- 4. تضمين صفحة من موقع آخر -->
+        <h3>صفحة خارجية مضمنة (موقع ويكيبيديا):</h3>
+        <iframe src="https://ar.wikipedia.org/wiki/لغة_برمجة" width="100%" height="400" title="صفحة ويكيبيديا عن لغات البرمجة"></iframe>
+    </div>
+
+    <hr>
+
+    <!-- قسم النموذج (Form) -->
+    <div id="contact">
+        <h2>نموذج التسجيل والتواصل</h2>
+        <form action="#" method="POST">
+            <label for="username">الاسم الكامل:</label><br>
+            <input type="text" id="username" name="username" placeholder="أدخل اسمك هنا" required><br><br>
+
+            <label for="email">البريد الإلكتروني:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+            <label for="data-type">نوع البيانات المفضَّل لديك:</label><br>
+            <select id="data-type" name="favorite_type">
+                <option value="string">النصوص (Strings)</option>
+                <option value="number">الأعداد (Numbers)</option>
+                <option value="boolean">القيم المنطقية (Booleans)</option>
+            </select><br><br>
+
+            <label for="message">ملاحظات أو استفسارات:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="اكتب استفسارك هنا..."></textarea><br><br>
+
+            <input type="submit" value="إرسال البيانات">
+            <input type="reset" value="إعادة ضبط">
+        </form>
+    </div>
+
     <br><br>
 </body>
-          </html>
+    </html>
